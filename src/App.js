@@ -61,9 +61,10 @@ function App() {
     btnRef.current.disabled = false;
   };
 
-  // useEffect(() => {
-  //   console.log("Button has been clicked");
-  // }, [btnRef?.current?.disabled]);
+  useEffect(() => {
+    fetchMoviesHandler;
+  }, []);
+
   let content = <p></p>;
   if (loading) {
     content = <p>Loading ...</p>;
